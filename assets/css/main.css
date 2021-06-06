@@ -1,7 +1,3 @@
-.header {
-    font-family: var(--font-header);
-}
-
 .header__bgr-img {
     background-image: url(../imgs/parallax-2.jpg);
     height: 873px;
@@ -206,4 +202,45 @@
 .travel-type-content-icon {
     margin: 10px;
     font-size: 28px;
+}
+
+/* Container */
+.container {
+    margin-top: 60px;
+    height: 200px;
+}
+
+.proposals__sub-title,
+.proposals__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.proposals__sub-title {
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.proposals__title {
+    color: #555555;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.proposals__title u {
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.proposals__title u::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #1bbc9b;
+    top: 70%;
+    left: 0;
+    z-index: -1;
 }
