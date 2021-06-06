@@ -84,27 +84,41 @@
                     <i class="header__navbar-icon fas fa-bars"></i>
                 </div>
                 <div class="header__content">
-                    <h1 class="header__content-title">Search your next Holiday</h1>
+                    <h1 class="header__content-title">Search your next <u>Holiday</u></h1>
                     <h6 class="header__content-description">CHECK OUR BEST PROMOTIONS</h6>
-                    <div class="header__content-search-btn">
-                        <input type="text" class="header__content-search" placeholder="Choose your destination">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <form action="" class="header__content-select-destination">
+                        <!-- <label for="destinations">Choose your destination</label> -->
+                        <select name="destinations" id="destinations-list">
+                            <option value="none">Choose your destination</option>
+                            <optgroup label="Europe">
+                                <option value="italy">Italy</option>
+                                <option value="england">England</option>
+                                <option value="germany">Germany</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="japan">Japan</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="korea">Korea</option>
+                            </optgroup>
+                            <option value="us">United States</option>
+                        </select>
+                        <i class="header__content-select-destination-btn fas fa-search"></i>
+                    </form>
                     <div class="header__content-travel-type">
                         <div class="travel-type-content">
-                            <i class="fas fa-glass-martini-alt"></i>
+                            <i class="travel-type-content-icon fas fa-glass-martini-alt"></i>
                             Relax
                         </div>
                         <div class="travel-type-content">
-                            <i class="fas fa-theater-masks"></i>
+                            <i class="travel-type-content-icon fas fa-theater-masks"></i>
                             Cultural
                         </div>
                         <div class="travel-type-content">
-                            <i class="fas fa-campground"></i>
+                            <i class="travel-type-content-icon fas fa-campground"></i>
                             Sport
                         </div>
                         <div class="travel-type-content">
-                            <i class="fas fa-camera"></i>
+                            <i class="travel-type-content-icon fas fa-camera"></i>
                             History
                         </div>
                     </div>
