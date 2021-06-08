@@ -226,6 +226,7 @@
     font-size: 36px;
     font-weight: bold;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .proposals__title u {
@@ -244,3 +245,211 @@
     left: 0;
     z-index: -1;
 }
+
+.travel-section {
+    position: relative;
+    /* width: inherit;
+    height: 400px; */
+}
+
+.travel-section__img {
+    /* width: inherit;
+    position: absolute;
+    object-fit: cover; */
+    height: 400px;
+}
+
+.europe .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/euro.jpg");
+    background-size: cover;
+}
+
+.thailand .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/thailand.jpg");
+    background-size: cover;
+}
+
+.italy .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/italia.jpg");
+    background-size: cover;
+}
+
+.asia .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/asia.jpg");
+    background-size: cover;
+}
+
+.netherlands .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/netherlands.jpg");
+    background-size: cover;
+}
+
+.us .travel-section__img {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.1)
+    ), url("../imgs/us.jpg");
+    background-size: cover;
+}
+
+.travel-section__icon {
+    position: absolute;
+    width: 36px;
+    top: 5%;
+    left: 10%;
+
+}
+
+.travel-info {
+    position: absolute;
+    left: 10%;
+    bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.travel-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.travel-info h6 {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.travel-options {
+    background: #14b9d5;
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to { 
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to { opacity: 0}
+}
+
+.travel-section:hover .travel-options {
+    display: flex;
+    animation: fadeIn 0.8s linear;
+}
+
+.travel-section:hover .img-decor {
+    animation: fadeOut 0.8s linear;
+}
+
+.travel-options__places {
+    margin: auto;
+    vertical-align: middle;
+}
+
+.travel-options__places h3 {
+    font-size: 20px;
+}
+
+.travel-options__places a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.travel-options__link {
+    color: #fff;
+    padding: 5px 0;
+}
+
+.travel-options__btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #14b9d5;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.proposals__footer {
+    margin: 60px auto 0 auto;
+    height: 235px;
+    background-image: url("../imgs/parallax-search-2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.proposals__footer h6 {
+    margin: 0;
+}
+
+.first-font {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.second-font {
+    font-size: 50px;
+}
+
+.second-font u {
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.second-font u::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 11px;
+    z-index: -9;
+    background: #f76570;
+}
+
+.proposals__footer-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f76570;
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+

@@ -11,3 +11,7 @@ html {
     box-sizing: border-box;
     font-family: var(--font-header);
 }
+
+.padding15 {
+    padding: 15px;
+}
