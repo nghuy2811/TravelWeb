@@ -15,3 +15,39 @@ html {
 .padding15 {
     padding: 15px;
 }
+
+.sub-title-section,
+.title-section {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sub-title-section {
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.title-section {
+    color: #555555;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.title-section u {
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.title-section u::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #1bbc9b;
+    top: 70%;
+    left: 0;
+    z-index: -1;
+}
