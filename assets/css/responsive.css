@@ -1,0 +1,98 @@
+/* Both mobile and tablet */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet only */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header_list {
+        display: none;
+    }
+
+    .header__content {
+        padding: 20px;
+        top: 100px;
+    }
+
+    .header__content-travel-type {
+        flex-direction: column;
+    }
+
+    .travel-type-content {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .travel-section {
+        display: flex;
+        margin: auto;
+        width: 500px;
+    }
+
+    .travel-section__img {
+        flex: 1;
+        height: 500px;
+    }
+
+    .proposals__footer {
+        flex-direction: column;
+    }
+
+    .destination-content {
+        flex-direction: column;
+        width: 450px;
+        margin: auto
+    }
+
+    .destination-content__description {
+        padding: 0;
+    }
+
+    .destination-content__img-content {
+        margin-top: 50px;
+        height: auto;
+        flex-basis: 0;
+    }
+    
+    .destination-column {
+        width: 450px;
+        margin: auto;
+    }
+
+    .footer__contact {
+        justify-content: center;
+    }
+    
+    .contact__text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact__form {
+        text-align: center;
+    }
+
+    .footer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .footer__content,
+    .footer__copyright {
+        width: 400px;
+        margin: auto;
+    }
+
+    .footer__content__description {
+        padding: 0;
+    }
+
+    .footer__list h3 {
+        margin: 30px 0 10px 0;
+    }
+}
+
+/* Mobile only */
+@media (max-width: 740px) {
+
+}
