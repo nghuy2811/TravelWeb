@@ -534,32 +534,8 @@
     position: relative;
 }
 
-.destination-content__img-countdown-time:nth-child(1)::after {
-    position: absolute;
-    content: "/";
-    top: 0px;
-    right: -40px;
-    font-size: 60px;
-    color: #000;
-    opacity: 0.1;
-    font-weight: 100;
-    z-index: 9;
-    line-height: 60px;
-}
-
-.destination-content__img-countdown-time:nth-child(2)::after {
-    position: absolute;
-    content: "/";
-    top: 0px;
-    right: -40px;
-    font-size: 60px;
-    color: #000;
-    opacity: 0.1;
-    font-weight: 100;
-    z-index: 9;
-    line-height: 60px;
-}
-
+.destination-content__img-countdown-time:nth-child(1)::after,
+.destination-content__img-countdown-time:nth-child(2)::after,
 .destination-content__img-countdown-time:nth-child(3)::after {
     position: absolute;
     content: "/";
